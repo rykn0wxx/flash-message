@@ -17,6 +17,7 @@ gem 'therubyracer', platforms: :ruby
 gem 'coffee-rails', '~> 4.2'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
+gem 'coffee-script-source', '1.8.0'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
@@ -26,6 +27,7 @@ end
 
 group :development do
   gem 'web-console', '>= 3.3.0'
+  gem 'annotate', '~> 2.7', '>= 2.7.1'
   gem 'sqlite3'
 end
 
@@ -36,3 +38,6 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+gem 'devise', '~> 4.2', '>= 4.2.1'
+gem 'activeadmin', github: 'activeadmin'
+gem 'active_admin_import', '~> 3.0'

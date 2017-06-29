@@ -1,0 +1,34 @@
+# == Schema Information
+#
+# Table name: scrollers
+#
+#  id                :integer          not null, primary key
+#  project_id        :integer
+#  forecast_group_id :integer
+#  current_sla       :float
+#  mtd_sla           :float
+#  callouts          :string
+#  created_at        :datetime         not null
+#  updated_at        :datetime         not null
+#
+# Indexes
+#
+#  index_scrollers_on_forecast_group_id  (forecast_group_id)
+#  index_scrollers_on_project_id         (project_id)
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  project: one
+  forecast_group: one
+  current_sla: 1.5
+  mtd_sla: 1.5
+  callouts: MyString
+
+two:
+  project: two
+  forecast_group: two
+  current_sla: 1.5
+  mtd_sla: 1.5
+  callouts: MyString
